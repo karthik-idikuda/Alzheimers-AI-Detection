@@ -1,62 +1,41 @@
-# 🧠 Alzheimer's AI Detection System
+# Alzheimer's AI Detection System
 
-An AI-powered system for early Alzheimer's disease detection, built for the Hack4Health AI for Alzheimer's Challenge.
+## Overview
+A specialized AI application for the early detection of Alzheimer's disease using MRI scan analysis. This project focuses on high-precision processing of neuroimaging data to identify subtle biomarkers often missed by traditional diagnostic methods.
 
----
+## Features
+-   **MRI Analysis**: Deep learning pipelines optimized for brain scan processing.
+-   **Early Warning**: Detection of mild cognitive impairment (MCI) indicators.
+-   **Batch Processing**: Capability to analyze large datasets of patient scans.
+-   **Visual Reports**: Generation of annotated images highlighting areas of concern.
+-   **Clinical Dashboard**: Interface for medical professionals to review findings.
 
-## 🌟 Overview
+## Technology Stack
+-   **Deep Learning**: PyTorch / Keras.
+-   **Imaging**: NiBabel, SimpleITK.
+-   **Backend**: Python Flask.
+-   **Frontend**: React / Streamlit.
 
-This project leverages deep learning and medical imaging analysis to detect early signs of Alzheimer's disease, supporting healthcare professionals in early diagnosis and intervention.
+## Usage Flow
+1.  **Ingest**: System receives MRI DICOM/NIfTI files.
+2.  **Preprocess**: Skull stripping and image normalization.
+3.  **Analyze**: CNN models classify the scan (AD, MCI, CN).
+4.  **Report**: Detailed diagnostic report is generated.
 
-## ✨ Features
-
-- **Deep Learning Models** - Advanced neural networks for detection
-- **Medical Image Analysis** - MRI/CT scan processing
-- **Dataset Integration** - Multiple medical datasets
-- **Hackathon Winner** - AI for Alzheimer's Challenge
-
-## 📁 Project Structure
-
-```
-dev/
-├── alzheimer_project/     # Main project code
-├── Datasets/              # Training datasets
-├── Datasets 2/            # Additional datasets
-└── Documentation/         # Competition docs
-```
-
-## 🚀 Quick Start
-
+## Quick Start
 ```bash
-# Navigate to project
-cd alzheimer_project
+# Clone the repository
+git clone https://github.com/Nytrynox/Alzheimers-AI-Detection.git
 
-# Setup environment
-python -m venv venv
-source venv/bin/activate
+# Install dependencies
 pip install -r requirements.txt
 
-# Run analysis
-python main.py
+# Run the analysis server
+python app.py
 ```
 
-## 🔬 Technology Stack
-
-| Component | Technology |
-|-----------|------------|
-| AI/ML | TensorFlow, PyTorch |
-| Imaging | OpenCV, SimpleITK |
-| Analysis | NumPy, Pandas |
-
-## 📝 License
-
+## License
 MIT License
 
-## 👤 Author
-
-**Karthik Idikuda**  
-AI/ML Developer | Healthcare AI Researcher
-
----
-
-*Fighting Alzheimer's with AI*
+## Author
+**Karthik Idikuda**
